@@ -12,7 +12,7 @@ function AddAssetModal({ isOpen, onClose, onAssetAdded }) {
     e.preventDefault();
 
     if (!buyPrice || !quantity) {
-      alert("Bhai, saari fields fill karo!");
+      alert("Bhai, saari fields fill karo!") ;
       return;
     }
 
@@ -25,7 +25,7 @@ function AddAssetModal({ isOpen, onClose, onAssetAdded }) {
       quantity: parseFloat(quantity),
     };
 
-    onAssetAdded(newAsset);
+    onAssetAdded(newAsset)
     
     // Form reset aur close logic
     setBuyPrice('');
